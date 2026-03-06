@@ -7,6 +7,7 @@ It showcases my projects, skills, and experience along with an AI-powered assist
 The AI assistant is powered by Google Gemini, allowing visitors and recruiters to interactively explore my portfolio.
 
 
+
 ✨ Features
 
 🤖 AI Portfolio Assistant
@@ -26,6 +27,7 @@ Fully responsive layout that works on desktop, tablet, and mobile devices.
 
 ⚡ Fast Performance
 Built with Vite for fast loading and optimized performance.
+
 
 
 🤖 AI Assistant
