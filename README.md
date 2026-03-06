@@ -11,6 +11,7 @@ The AI assistant is powered by Google Gemini, allowing visitors and recruiters t
 
 🤖 AI Portfolio Assistant
 Interactive chatbot that answers questions about my skills, projects, and experience.
+
 🎨 Modern UI & Animations
 Smooth animations and interactive components for a clean developer portfolio.
 📄 Resume Viewer
