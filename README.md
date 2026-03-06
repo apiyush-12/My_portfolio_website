@@ -14,12 +14,16 @@ Interactive chatbot that answers questions about my skills, projects, and experi
 
 🎨 Modern UI & Animations
 Smooth animations and interactive components for a clean developer portfolio.
+
 📄 Resume Viewer
 Recruiters can view my resume directly from the website.
+
 🔗 Social Profile Integration
 Direct links to GitHub, LinkedIn, and LeetCode profiles.
+
 📱 Responsive Design
 Fully responsive layout that works on desktop, tablet, and mobile devices.
+
 ⚡ Fast Performance
 Built with Vite for fast loading and optimized performance.
 
@@ -27,7 +31,11 @@ Built with Vite for fast loading and optimized performance.
 🤖 AI Assistant
 
 The portfolio includes an AI-powered assistant that can answer questions such as:
+
 Tell me about Piyush Kumar
+
 What projects has Piyush built?
+
 What technologies does Piyush know?
+
 The assistant uses resume data and project information to generate relevant responses.
