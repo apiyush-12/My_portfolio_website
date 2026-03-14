@@ -16,6 +16,8 @@ import { Extra } from './components/Extra';
 import { Navbar } from './components/Navbar';
 import { Chatbot } from './components/Chatbot';
 import { resumeData } from './data/resume';
+import { CursorGlow } from './components/CursorGlow';
+
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -30,7 +32,7 @@ export default function App() {
   return (
     <div className="min-h-screen text-white font-sans selection:bg-indigo-500/30 relative">
       <AnimatedBackground />
-      
+      <CursorGlow />
       {showSplash ? (
         <Splash />
       ) : (
