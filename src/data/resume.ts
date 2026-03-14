@@ -57,6 +57,7 @@ export const resumeData = {
   "projects": [
     {
       "title": "AI Email Reply Generator",
+      "image": "/Email.png",
       "links": "https://email-writer-pi.vercel.app/",
       "dates": "Feb 2026 – March 2026",
       "stack": "Java, Spring Boot, React.js, Gemini API, Render",
@@ -65,7 +66,18 @@ export const resumeData = {
       ]
     },
     {
+      "title": "DSA Visualizer",
+      "image": "/dsa.png",
+      "links": "https://dsa-visual.piyussh.dev/",
+      "dates": "March 2026 – Present",
+      "stack": "Next.js, Data Structures & Algorithms, Supabase Auth, REST APIs, Vercel",
+      "bullets": [
+        "Developed an interactive platform to visualize Data Structures & Algorithms with step-by-step animations for sorting, searching, graphs, trees, linked lists, and dynamic programming."
+      ]
+    },
+    {
       "title": "Career Guidance Platform",
+      "image": "/career.png",
       "links": "https://career-guidance-sih.vercel.app/",
       "dates": "Sep 2025 – Nov 2025",
       "stack": "React.js, TypeScript, MongoDB, Post-CSS, Google Maps API",
@@ -75,6 +87,7 @@ export const resumeData = {
     },
     {
       "title": "NWC Association Web Platform",
+      "image": "/nwc.png",
       "links": "https://nwc-association-web.vercel.app/",
       "dates": "Jun 2025 – Jul 2025",
       "stack": "Next.js, TypeScript, Tailwind CSS, Vercel",
@@ -84,6 +97,7 @@ export const resumeData = {
     },
     {
       "title": "Smart Home Automation with Jarvis",
+      "image": "/home.png",
       "links": "https://drive.google.com/file/d/1zUNVzJOU9hTUJv5wLYE9Zsh43sMFmPyA/view",
       "dates": "Jan 2025 – Jun 2025",
       "stack": "Raspberry Pi, ESP8266, Python, IoT, Relay Module",
