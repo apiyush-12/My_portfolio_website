@@ -134,7 +134,8 @@ export const resumeData = {
   ],
   "certifications": [
     "Oracle Certified Professional – Generative AI",
-    "NPTEL – Programming in Java"
+    "NPTEL – Programming in Java",
+    "AWS Certified Cloud Practitioner"
   ],
   "awards": [
     {
