@@ -24,8 +24,18 @@ export const Projects: React.FC<{ data: any[] }> = ({ data }) => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="group relative bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:bg-white/[0.04] transition-all"
+            className="group relative bg-white/[0.02] border border-white/10 rounded-2xl overflow-hidden hover:bg-white/[0.04] transition-all"
           >
+            {project.image && (
+              <div className="w-full h-48 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            )}
+            <div className="p-6">
             <div className="flex justify-between items-start mb-4">
               <div className="p-3 bg-indigo-500/10 rounded-xl text-indigo-400">
                 <Code className="w-6 h-6" />
@@ -54,6 +64,7 @@ export const Projects: React.FC<{ data: any[] }> = ({ data }) => {
             <a href={project.links} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-white hover:text-indigo-400 transition-colors">
               View Project <ExternalLink className="w-4 h-4" />
             </a>
+            </div>
           </motion.div>
         ))}
       </div>
