@@ -56,6 +56,20 @@ export const resumeData = {
   ],
   "projects": [
     {
+      "title": "AI Voice Assistant",
+      "image": "/ai-assistant.png",
+      "links": "https://virtual-assistance-9ypu.onrender.com",
+      "dates": "April 2026 – Present",
+      "stack": "React.js, Node.js, Express.js, MongoDB, Gemini API, Web Speech API, Cloudinary, Vercel, Render",
+      "bullets": [
+        "Built a full-stack AI-powered voice assistant that processes real-time voice commands and responds using speech synthesis.",
+        "Integrated Gemini API for intelligent responses and implemented command execution features like Google search, YouTube, and app navigation.",
+        "Implemented avatar customization using Cloudinary, enabling users to upload or set image URLs for their personalized assistant.",
+        "Developed a continuous speech recognition system with optimized request handling to prevent API rate limits and ensure smooth interaction.",
+        "Deployed frontend on Vercel and backend on Render with secure environment variable management and MongoDB integration."
+      ]
+    },
+    {
       "title": "AI Email Reply Generator",
       "image": "/Email.png",
       "links": "https://email-writer-pi.vercel.app/",
