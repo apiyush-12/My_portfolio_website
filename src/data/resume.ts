@@ -57,7 +57,7 @@ export const resumeData = {
   "projects": [
     {
       "title": "AI Voice Assistant",
-      "image": "/ai-assistant.png",
+      "image": "/ai-assistance.jpeg",
       "links": "https://virtual-assistance-9ypu.onrender.com",
       "dates": "April 2026 – Present",
       "stack": "React.js, Node.js, Express.js, MongoDB, Gemini API, Web Speech API, Cloudinary, Vercel, Render",
