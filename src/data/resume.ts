@@ -73,7 +73,7 @@ export const resumeData = {
       "title": "CareerLens – AI Resume Analyzer & Learning Roadmap",
       "image": "/careerlens.jpeg",
       "links": "https://careerlens.piyussh.dev/",
-      "dates": "March 2026 – April 2026",
+      "dates": "January 2026 – April 2026",
       "stack": "Next.js, TypeScript, Tailwind CSS, Flask, nlp, Python, Supabase, Recharts, Render, Vercel",
       "bullets": [
         "Built and deployed a full-stack AI-powered platform that analyzes resumes, identifies skill gaps, and generates personalized learning roadmaps based on target career roles.",
