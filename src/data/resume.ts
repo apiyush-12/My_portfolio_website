@@ -79,7 +79,7 @@ export const resumeData = {
         "Built and deployed a full-stack AI-powered platform that analyzes resumes, identifies skill gaps, and generates personalized learning roadmaps based on target career roles.",
         "Implemented secure authentication using Supabase and integrated PDF parsing with Flask backend to extract skills and compute readiness scores with real-time visualization."
       ]
-    }
+    },
     {
       "title": "AI Email Reply Generator",
       "image": "/Email.png",
