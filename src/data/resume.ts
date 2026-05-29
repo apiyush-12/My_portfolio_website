@@ -60,7 +60,7 @@ export const resumeData = {
       "image": "/ai-mock-interview.png",
       "links": "https://ai-mock-interview.piyussh.dev/",
       "dates": "May 2026 – Present",
-      "stack": "Next.js, React.js, PostgreSQL, Drizzle ORM, Clerk Authentication, Gemini AI, Tailwind CSS, ShadCN UI, Speech Recognition API, React Webcam",
+      "stack": "Next.js, React.js, PostgreSQL, Drizzle ORM, Clerk Authentication, Gemini AI, Tailwind CSS, Shadcn UI, Speech Recognition API, React Webcam",
       "bullets": [
         "Developed an AI-powered mock interview platform that generates personalized interview questions based on job role, technical skills, and years of experience.",
         "Integrated Google Gemini AI to dynamically create interview questions and provide intelligent answer evaluation, ratings, and improvement feedback.",
