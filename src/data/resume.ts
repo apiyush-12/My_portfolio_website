@@ -56,6 +56,20 @@ export const resumeData = {
   ],
   "projects": [
     {
+      "title": "AI Mock Interview Platform",
+      "image": "/ai-mock-interview.png",
+      "links": "https://ai-mock-interview.piyussh.dev/",
+      "dates": "May 2026 – Present",
+      "stack": "Next.js, React.js, PostgreSQL, Drizzle ORM, Clerk Authentication, Gemini AI, Tailwind CSS, ShadCN UI, Speech Recognition API, React Webcam",
+      "bullets": [
+        "Developed an AI-powered mock interview platform that generates personalized interview questions based on job role, technical skills, and years of experience.",
+        "Integrated Google Gemini AI to dynamically create interview questions and provide intelligent answer evaluation, ratings, and improvement feedback.",
+        "Implemented voice-enabled interview sessions using Speech Recognition API, allowing users to answer questions naturally through speech.",
+        "Built real-time webcam integration to simulate realistic interview environments with live video monitoring during interview sessions.",
+        "Designed a secure authentication and interview management system using Clerk, PostgreSQL, and Drizzle ORM for storing interview history, responses, and AI-generated feedback."
+      ]
+    },
+    {
       "title": "AI Voice Assistant",
       "image": "/ai-assistance.jpeg",
       "links": "https://virtual-assistance-9ypu.onrender.com",
