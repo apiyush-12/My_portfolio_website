@@ -31,7 +31,7 @@ export const Hero: React.FC<{ data: any }> = ({ data }) => {
         
          <div className="flex flex-col md:flex-row gap-12 items-center md:items-start mb-8">
           <div className="flex-1">
-            <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
+            <p className="text-gray-400 text-lg md:text-xl leading-relaxed text-justify">
               {data.summary}
             </p>
           </div>
