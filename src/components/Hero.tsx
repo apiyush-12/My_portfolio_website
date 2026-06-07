@@ -73,7 +73,7 @@ export const Hero: React.FC<{ data: any }> = ({ data }) => {
           >
             View Experience <ChevronDown className="w-4 h-4" />
           </a>
-          <a href="/personal_resume_1.pdf"
+          <a href="/Personal_Resume_1.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white rounded-lg font-medium transition-all flex items-center gap-2">
