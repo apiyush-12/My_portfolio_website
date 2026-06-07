@@ -42,8 +42,8 @@ export const Hero: React.FC<{ data: any }> = ({ data }) => {
             transition={{ duration: 0.8, delay: 0.4, type: "spring", stiffness: 100 }}
             className="shrink-0 relative group"
           >
-            <div className="absolute inset-0 bg-indigo-500/20 rounded-2xl blur-xl group-hover:bg-indigo-500/30 transition-colors duration-500"></div>
-            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border-2 border-white/10 group-hover:border-indigo-500/50 transition-colors duration-500">
+            <div className="absolute inset-0 bg-indigo-500/20 rounded-full blur-xl group-hover:bg-indigo-500/30 transition-colors duration-500"></div>
+            <div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-indigo-500/50 transition-colors duration-500">
               <img 
                 src="/profile_picture.jpg" 
                 alt={data.name} 
