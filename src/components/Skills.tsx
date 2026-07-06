@@ -116,9 +116,15 @@ interface MarqueeRowProps {
   items: string[];
   duration: number;
   direction: 'down' | 'up';
+  onHover: (skill: string) => void;
 }
 
-const MarqueeRow: React.FC<MarqueeRowProps> = ({ items, duration, direction }) => {
+const MarqueeRow: React.FC<MarqueeRowProps> = ({
+  items,
+  duration,
+  direction,
+  onHover,
+}) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const positionRef = useRef(0);        // current translateX in px
   const rafRef = useRef<number>(0);
@@ -165,8 +171,22 @@ const MarqueeRow: React.FC<MarqueeRowProps> = ({ items, duration, direction }) =
         onMouseEnter={() => { pausedRef.current = true; }}
         onMouseLeave={() => { pausedRef.current = false; }}
       >
-        {items.map((item, j) => <SkillPill key={`a-${j}`} label={item} />)}
-        {items.map((item, j) => <SkillPill key={`b-${j}`} label={item} aria-hidden />)}
+      {items.map((item, j) => (
+        <SkillPill
+          key={`a-${j}`}
+          label={item}
+          onHover={onHover}
+        />
+      ))}
+      
+      {items.map((item, j) => (
+        <SkillPill
+          key={`b-${j}`}
+          label={item}
+          aria-hidden
+          onHover={onHover}
+        />
+      ))}
       </div>
     </div>
   );
@@ -208,10 +228,18 @@ export const Skills: React.FC<{ data: any[] }> = ({ data }) => {
                 items={skillGroup.items}
                 duration={duration}
                 direction={scrollDirection}
+                onHover={setSelectedSkill}
               />
             </motion.div>
           );
         })}
+      </div>
+      
+      <div className="mt-10">
+        <SkillInfoCard
+          skill={selectedSkill}
+          info={skillDetails[selectedSkill] ?? null}
+        />
       </div>
     </section>
   );
