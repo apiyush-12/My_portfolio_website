@@ -19,6 +19,8 @@ const skillIconMap: Record<string, { type: 'devicon' | 'text'; value: string }> 
   "TensorFlow":           { type: 'devicon', value: 'devicon-tensorflow-original colored' },
   "Scikit-learn":         { type: 'devicon', value: 'devicon-scikitlearn-plain colored' },
   "AWS":                  { type: 'devicon', value: 'devicon-amazonwebservices-plain-wordmark colored' },
+  "Docker":               { type: 'devicon', value: 'devicon-docker-plain colored' },
+  "Kubernetes":           { type: 'devicon', value: 'devicon-kubernetes-plain colored' },
   "GitHub":               { type: 'devicon', value: 'devicon-github-original' },
   "Render":               { type: 'devicon', value: 'devicon-render-plain' },
   "Cisco Packet Tracer":  { type: 'text', value: '🔧' },
