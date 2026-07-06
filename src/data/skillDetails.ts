@@ -35,7 +35,7 @@ export const skillDetails: Record<string, SkillInfo> = {
     levelText: "Advanced",
   },
 
-  React: {
+  "React.js": {
     title: "Frontend Library",
     description:
       "JavaScript library for creating fast and interactive user interfaces using reusable components.",
