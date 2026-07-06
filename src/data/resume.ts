@@ -160,7 +160,7 @@ export const resumeData = {
     },
     {
       "group": "Frameworks & Tools",
-      "items": ["TensorFlow", "Scikit-learn", "Cisco Packet Tracer", "SD-WAN", "Cisco DNA Center", "AWS", "Render", "GitHub"]
+      "items": ["TensorFlow", "Scikit-learn", "Cisco Packet Tracer", "SD-WAN", "Cisco DNA Center", "AWS", "Docker", "Kubernetes", "Render", "GitHub"]
     },
     {
       "group": "Domains",
