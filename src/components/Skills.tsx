@@ -208,12 +208,8 @@ export const Skills: React.FC<{ data: any[] }> = ({ data }) => {
         <h2 className="text-3xl font-display font-bold mb-2">Skills</h2>
         <div className="w-12 h-1 bg-indigo-500 rounded-full"></div>
       </motion.div>
-
-    <div className="grid lg:grid-cols-[1fr_380px] gap-8">
-    
-        {/* LEFT SIDE */}
+      
         <div className="flex flex-col gap-6">
-    
             {data.map((skillGroup, i) => {
                 const duration = Math.max(25, skillGroup.items.length * 4);
     
@@ -248,18 +244,13 @@ export const Skills: React.FC<{ data: any[] }> = ({ data }) => {
             })}
     
         </div>
-    
-        {/* RIGHT SIDE */}
+
         <div className="sticky top-24 h-fit">
-    
             <SkillInfoCard
                 skill={selectedSkill}
                 info={skillDetails[selectedSkill] ?? null}
             />
-    
         </div>
-    
-    </div>
     </section>
   );
 };
