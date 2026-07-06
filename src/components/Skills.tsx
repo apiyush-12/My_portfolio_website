@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll } from 'motion/react';
+import SkillTooltip from "./SkillTooltip";
 
 const skillIconMap: Record<string, { type: 'devicon' | 'text'; value: string }> = {
   "Java":                 { type: 'devicon', value: 'devicon-java-plain colored' },
@@ -38,21 +39,64 @@ const skillIconMap: Record<string, { type: 'devicon' | 'text'; value: string }> 
   "Sensors":              { type: 'text', value: '🔬' },
 };
 
-const SkillPill: React.FC<{ label: string; 'aria-hidden'?: boolean }> = ({ label, ...rest }) => {
+const SkillPill: React.FC<{ label: string; 'aria-hidden'?: boolean }> = ({
+  label,
+  ...rest
+}) => {
+
   const icon = skillIconMap[label];
+
   return (
-    <span
-      {...rest}
-      className="whitespace-nowrap inline-flex items-center gap-2 px-4 py-2 bg-white/[0.05] border border-white/10 rounded-xl text-sm text-gray-300 hover:bg-indigo-500/10 hover:border-indigo-500/40 hover:text-white transition-colors cursor-default select-none"
-    >
-      {icon && (
-        icon.type === 'devicon'
-          ? <i className={icon.value} style={{ fontSize: '16px' }} />
-          : <span style={{ fontSize: '14px' }}>{icon.value}</span>
-      )}
-      {label}
-    </span>
+
+    <div className="relative group inline-flex">
+
+      <span
+        {...rest}
+        className="
+        whitespace-nowrap
+        inline-flex
+        items-center
+        gap-2
+        px-4
+        py-2
+        bg-white/[0.05]
+        border
+        border-white/10
+        rounded-xl
+        text-sm
+        text-gray-300
+        hover:bg-indigo-500/10
+        hover:border-indigo-500/40
+        hover:text-white
+        transition-all
+        duration-300
+        cursor-default
+        select-none
+        "
+      >
+
+        {icon &&
+          (icon.type === "devicon" ? (
+            <i
+              className={icon.value}
+              style={{ fontSize: "16px" }}
+            />
+          ) : (
+            <span style={{ fontSize: "14px" }}>
+              {icon.value}
+            </span>
+          ))}
+
+        {label}
+
+      </span>
+
+      <SkillTooltip skill={label} />
+
+    </div>
+
   );
+
 };
 
 // Hook to detect scroll direction
