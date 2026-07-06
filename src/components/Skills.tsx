@@ -209,38 +209,57 @@ export const Skills: React.FC<{ data: any[] }> = ({ data }) => {
         <div className="w-12 h-1 bg-indigo-500 rounded-full"></div>
       </motion.div>
 
-      <div className="grid lg:grid-cols-[1fr_380px] gap-8">
-      {data.map((skillGroup, i) => {
-          const duration = Math.max(25, skillGroup.items.length * 4);
-          return (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
-              className="bg-white/[0.03] border border-white/10 rounded-2xl p-5 overflow-hidden"
-            >
-              <p className="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-4">
-                {skillGroup.group}
-              </p>
-              <MarqueeRow
-                items={skillGroup.items}
-                duration={duration}
-                direction={scrollDirection}
-                onHover={setSelectedSkill}
-              />
-            </motion.div>
-          );
-        })}
-      </div>
-      
-      <div className="sticky top-24 h-fit">
-        <SkillInfoCard
-          skill={selectedSkill}
-          info={skillDetails[selectedSkill] ?? null}
-        />
-      </div>
+    <div className="grid lg:grid-cols-[1fr_380px] gap-8">
+    
+        {/* LEFT SIDE */}
+        <div className="flex flex-col gap-6">
+    
+            {data.map((skillGroup, i) => {
+                const duration = Math.max(25, skillGroup.items.length * 4);
+    
+                return (
+                    <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{
+                            duration: 0.5,
+                            delay: i * 0.07,
+                            ease: [0.22, 1, 0.36, 1]
+                        }}
+                        className="bg-white/[0.03] border border-white/10 rounded-2xl p-5 overflow-hidden"
+                    >
+    
+                        <p className="text-xs font-semibold uppercase tracking-widest text-indigo-400 mb-4">
+                            {skillGroup.group}
+                        </p>
+    
+                        <MarqueeRow
+                            items={skillGroup.items}
+                            duration={duration}
+                            direction={scrollDirection}
+                            onHover={setSelectedSkill}
+                        />
+    
+                    </motion.div>
+                );
+    
+            })}
+    
+        </div>
+    
+        {/* RIGHT SIDE */}
+        <div className="sticky top-24 h-fit">
+    
+            <SkillInfoCard
+                skill={selectedSkill}
+                info={skillDetails[selectedSkill] ?? null}
+            />
+    
+        </div>
+    
+    </div>
     </section>
   );
 };
