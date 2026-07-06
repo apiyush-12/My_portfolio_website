@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useScroll } from 'motion/react';
-import SkillTooltip from "./SkillTooltip";
+import { skillDetails } from "../data/skillDetails";
+import SkillInfoCard from "./SkillInfoCard";
 
 const skillIconMap: Record<string, { type: 'devicon' | 'text'; value: string }> = {
   "Java":                 { type: 'devicon', value: 'devicon-java-plain colored' },
@@ -39,64 +40,53 @@ const skillIconMap: Record<string, { type: 'devicon' | 'text'; value: string }> 
   "Sensors":              { type: 'text', value: '🔬' },
 };
 
-const SkillPill: React.FC<{ label: string; 'aria-hidden'?: boolean }> = ({
-  label,
-  ...rest
-}) => {
-
+const SkillPill: React.FC<{
+  label: string;
+  onHover: (skill: string) => void;
+  "aria-hidden"?: boolean;
+}> = ({ label, onHover, ...rest }) => {
   const icon = skillIconMap[label];
 
   return (
-
-    <div className="relative group inline-flex">
-
+    <div
+      className="relative inline-flex"
+      onMouseEnter={() => onHover(label)}
+    >
       <span
         {...rest}
         className="
-        whitespace-nowrap
-        inline-flex
-        items-center
-        gap-2
-        px-4
-        py-2
-        bg-white/[0.05]
-        border
-        border-white/10
-        rounded-xl
-        text-sm
-        text-gray-300
-        hover:bg-indigo-500/10
-        hover:border-indigo-500/40
-        hover:text-white
-        transition-all
-        duration-300
-        cursor-default
-        select-none
+          whitespace-nowrap
+          inline-flex
+          items-center
+          gap-2
+          px-4
+          py-2
+          bg-white/[0.05]
+          border
+          border-white/10
+          rounded-xl
+          text-sm
+          text-gray-300
+          hover:bg-indigo-500/10
+          hover:border-indigo-500/40
+          hover:text-white
+          transition-all
+          duration-300
+          cursor-default
+          select-none
         "
       >
-
         {icon &&
           (icon.type === "devicon" ? (
-            <i
-              className={icon.value}
-              style={{ fontSize: "16px" }}
-            />
+            <i className={icon.value} style={{ fontSize: "16px" }} />
           ) : (
-            <span style={{ fontSize: "14px" }}>
-              {icon.value}
-            </span>
+            <span style={{ fontSize: "14px" }}>{icon.value}</span>
           ))}
 
         {label}
-
       </span>
-
-      <SkillTooltip skill={label} />
-
     </div>
-
   );
-
 };
 
 // Hook to detect scroll direction
@@ -184,6 +174,7 @@ const MarqueeRow: React.FC<MarqueeRowProps> = ({ items, duration, direction }) =
 
 export const Skills: React.FC<{ data: any[] }> = ({ data }) => {
   const scrollDirection = useScrollDirection();
+  const [selectedSkill, setSelectedSkill] = useState("Java");
 
   return (
     <section id="skills" className="scroll-mt-24">
