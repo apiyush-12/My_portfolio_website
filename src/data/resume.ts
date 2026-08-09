@@ -34,6 +34,16 @@ export const resumeData = {
   ],
   "experience": [
     {
+      "company": "Autodesk",
+      "role": "Network DevOps Intern",
+      "dates": "July 2026 – Present",
+      "location": "Bengaluru, India",
+      "bullets": [
+        "Working as an Intern, gaining hands-on experience with Cloud Networking, VPCs and Network configuration.",
+        "Learning and applying concepts across SASE, Cloud WAN, and Data Center, while exploring modern technologies used in enterprise infrastructure."
+      ]
+    },
+    {
       "company": "King Faisal University",
       "role": "Research Intern – AI/ML (Solar Energy Prediction)",
       "dates": "Jun 2025 – Present",
