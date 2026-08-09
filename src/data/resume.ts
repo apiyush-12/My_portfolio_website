@@ -46,7 +46,7 @@ export const resumeData = {
     {
       "company": "King Faisal University",
       "role": "Research Intern – AI/ML (Solar Energy Prediction)",
-      "dates": "Jun 2025 – Present",
+      "dates": "Jun 2025 – May 2026",
       "location": "Online, Saudi Arabia",
       "bullets": [
         "Developed a hybrid regression-based solar energy forecasting system using 5+ years of real climatic data, improving prediction accuracy by 20%.",
