@@ -66,6 +66,17 @@ export const resumeData = {
   ],
   "projects": [
     {
+      "title": "NetViz Studio",
+      "image": "/netviz.jpeg",
+      "links": "https://netviz.piyussh.dev/",
+      "dates": "July 2026 – Present",
+      "stack": "Next.js, Clerk Authentication, Tailwind CSS, Shadcn UI, postgreSQL, bycrypt, react-flow, zustand",
+      "bullets": [
+        "NetViz Studio is a browser-based network visualization platform designed to make networking concepts easier to understand through interactive simulations.",
+        "Instead of learning only from static diagrams, users can observe packets moving between devices, inspect protocol fields, pause and replay events, introduce failures, configure network settings, and understand why each networking decision occurs."
+      ]
+    },
+    {
       "title": "AI Mock Interview Platform",
       "image": "/ai-mock-interview.png",
       "links": "https://ai-mock-interview.piyussh.dev/",
