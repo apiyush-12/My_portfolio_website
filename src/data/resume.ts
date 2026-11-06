@@ -66,6 +66,17 @@ export const resumeData = {
   ],
   "projects": [
     {
+      "title": "BatchVault",
+      "image": "/batchvault.png",
+      "links": "https://batch-vault.vercel.app/",
+      "dates": "September 2026 – Present",
+      "stack": "Next.js, TypeScript, Supabase, PostgreSQL, Tailwind CSS, Shadcn UI, Framer Motion, Vercel",
+      "bullets": [
+        "BatchVault is a privacy-first digital memory archive for college batches, allowing students and alumni to securely preserve and revisit shared photos, videos, stories, and memories within invite-only batch spaces.",
+        "Built with Supabase Auth, PostgreSQL Row Level Security and private storage, it provides secure media uploads, galleries, timelines, comments, reactions, member roles, invitations, moderation, and lifecycle management while keeping each batch isolated and accessible only to authorized members."
+      ]
+    },
+    {
       "title": "NetViz Studio",
       "image": "/netviz.jpeg",
       "links": "https://netviz.piyussh.dev/",
